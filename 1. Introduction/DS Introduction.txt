@@ -1,0 +1,43 @@
+/* 
+
+SECTION OF STACK KNOWN AS FRAME OF MAIN FUNCTION or ACTIVATION RECORD OF MAIN FUNCTION
+   Whatever the variales declared inside program or function,the MEMORY 
+   for those variable will be created inside the STACK 
+   
+   So the portion of    memory given to the function is ACTIVATION 
+   RECORD OF that function
+
+STATIC MEMORY ALLOCATION(ORGANIZED MEMORY)
+   Bytes of memory required by the function which was decide at compile 
+   time is STATIC
+
+HEAP - JUST PILLING UP IF THINGS ARE KEPT ONE ABOVER ANOTHER
+
+  *Used of organized & Unorganized things 
+  *Unorganized Memory    
+  *Heap Memory must be used as resource when required(When require take 
+  the memory or when you dont require release the memory)   
+  *It cant be directly accessed(only Using Pointer) 
+        int *p    
+        p=new int[5] //C++ create array of 5 in heap memory   
+        
+        int *p  
+        p=(int *)malloc(5*size of(int)) // C language
+
+  * After acccessing(NO NEED OF MEMORY THEN DEALLOCATE)    
+   
+       delete[]p; // C++ Delete the Memory in HEAP MEMORY
+       
+       free(p); // C Delete the Memory in HEAP MEMORY
+
+       P=NULL // Assign Pointer to NULL
+  
+  * If we aren't releasing memory in HEAP,then that memory will be still 
+   belonging to that particular variable & that memory cant be used 
+   again so it causes loss of memory known as MEMORY LEAK   
+
+
+
+
+
+*/
