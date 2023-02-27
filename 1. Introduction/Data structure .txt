@@ -1,0 +1,34 @@
+/*
+
+DATA STRUCTURE :
+  Organization of Data inside the main memory for efficient utilization by an application 
+
+  Data structure are formed inside the main memory during execution 
+
+  Arrangements of Data inside the main memory is Data structure 
+
+DATA BASE:
+ Arranging the Data in some model like relational model in the permanent storage so that they can be accessed by applications easily
+
+ This arrangement of Data in the hard disk or permanent storage is known as Database
+
+ Arrangements of Data in the disk
+
+DATA WAREHOUSE 
+ More amount of Data(Ex:Historial data) which is been inactive & utilized when it is required
+
+ Helpful for analyzing the business ,making policies  ..etc so the previous 
+ Data will be used for organization and 
+ decision making
+
+ Algorithm written for analyzing the data 
+ inside the data warehouse is known as 
+ Data mining
+
+BIG DATA:
+ Storing and utilization of very large amount of Data (Data used in internet ,about place ,about people etc,.)
+
+
+ 
+
+*/
