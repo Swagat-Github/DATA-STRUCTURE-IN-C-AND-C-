@@ -1,0 +1,68 @@
+/*
+TIME COMPLEXITY
+  *Depends on Procedure that we are adopting
+  *For Ex: arr[n] - mean n Elements
+   so TimeComplexity becomes Order(n)
+  *Accesing n elements using for Nested Loop Time Complexity becomes
+  Order(n^2)
+  *Suppose for Middle element in the array(either LEFT or RIGHT)i.e we
+   are processing half of the list,goes on
+  *When something is successively divided into 2 until it reaches the
+   stage which is represented as LOG we dividing by 2 so Log of n
+   elements is Log 2 n(fori=N;i>1;i=i/2)
+  *MATRIX - For all elements in ARRAY    - order(n^2) ACCESING NEED
+            NESTD LOOP FOR ELEMENTS IN MARIX
+          - For Row elements in ARAY     - order(n)
+          - For Column elements in ARRAY - order(n)
+  *Linked List - array + list so timecomplexity becomes Order(n+m)
+
+  *Tree & height of the tree then it is order(LOG n),for processing  all
+   elemnts - order(n) & whatever prgm written for this process is also
+   Order(n)
+
+EXAMPLE
+1 . void swap(x,y)
+ {
+   int t;  TIME
+   t=x;   -  1
+   x=y;   -  1
+   y=t;   -  1
+}
+Therefore F(n)= 3n^0
+  Hence Time Complexity Becomes = Order(1) since n^0=1
+
+2 . int sum(int a[],int n)
+   {
+     int s,i;                TIME
+     i=0;                      1
+     for(i=0;i<n;i++)         n+1
+      {
+           s=s+a[i];           n
+      }
+     return s;                 1
+}
+
+For loop(i=0 = N times ,i<n = N+1 till execution gets terminates and i++ = n
+times )
+
+F(n)=2n+3(SEE THE POWER OF N which is 1 so n^1=n)
+Degree = Order(n)
+
+
+3.Void Add(int n)
+{
+ int i,j;                             TIME
+ for(i=0;i<n;i++)                      n+1
+ {
+    for(j=0;j<n;j++)                   n*1(Nested Loop so multiplication)
+    {
+      c[i][j]=a[i][j]+b[i][j];         n*n(Repeats for n*n times)
+    }
+ }
+}
+
+F(n)=2n^2+2n+1
+Power of n=2
+so DEGREE = Order(n^2)
+
+*/
