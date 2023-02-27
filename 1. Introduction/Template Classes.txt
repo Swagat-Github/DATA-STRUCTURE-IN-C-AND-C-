@@ -1,0 +1,49 @@
+// Generic Class - Template class means any type of data(int,float,double....etc,,,) can be used!
+
+
+#include <iostream>
+using namespace std;
+
+template<class T> //Generic Class & Varible used in this prgm is T & it 
+   //used with { .... } For using another time we need to again call it.
+class Arithmetic
+{
+private:
+  T a;
+  T b;
+public:
+  Arithmetic(T a,T b);
+  T sum();
+  T diff();
+};         // Template scope  Terminates here
+
+
+template<class T>
+Arithmetic<T> :: Arithmetic(T a,T b) // :: - scope Resolution
+{
+  this->a=a;
+  this->b=b;
+}
+template<class T>
+T Arithmetic<T> :: sum()
+{
+  T c;
+  c=a+b;
+  return c;
+}
+template<class T>
+T Arithmetic<T> :: diff()
+{
+  T c;
+  c=a-b;
+  return c;
+}
+
+int main() 
+{
+ Arithmetic<float> a(2.5,5.6);    /*Desired  Data Type inside < >*/
+ cout<<a.sum()<<endl;
+ cout<<a.diff();
+  
+ return 0;
+}
