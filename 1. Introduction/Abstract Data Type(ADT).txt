@@ -1,0 +1,53 @@
+/*
+DATATYPE
+  *Representation of Data   
+  *Operation on Data
+ABSTRACT
+  *Hiding Internal Details
+INTERNAL DETAILS are hidden while doing operation(Arithmetic & Logical Operation)
+  *INTERNAL DETAILS ARE HIDDENT(+,-,*,Modulus)
+  *This term is related to OOPS concept
+LIST - 8,3,9,4,6,10,12
+
+Data required for storing List:
+  *SPACE (for Storing elements)
+  *CAPACITY(Maximum capacity)
+  *SIZE(Number of elements)
+
+RESPRESENTATION OF LIST CAN BE DONE: 
+ 1.ARRAY   
+ 2.LINKED LIST
+
+OPERATION ON LIST:
+ 1.ADD(x) or APPEND(x)  
+ 2.REMOVE(x) 
+ 3.SEARCH(X)   
+ ......
+
+
+ADT
+
+REPRESENTATION OF DATA AND OPERARION ON THE DATA TOGETHER THEN IT BECOMES DATATYPE,BY HIDING DETAILS - ABSTRACT DATA TYPE
+
+EXAMPLE IN OOPS - CLASS
+  we define a class,declare variable and perform operation in it
+
+LIST
+
+1.add(element) or append(element)
+2.add(index,element) or Insert(index,element)
+3.remove(x)
+4.set(index,new element) - Changing element at a given index
+5.get(index) - Knowing an elements from a given index
+6.search(key) - Searching for an element to finds its index if it is present in the index list
+  * Also known as contains(key)
+7.sort()
+
+
+
+
+
+
+
+
+*/
