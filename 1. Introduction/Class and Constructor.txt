@@ -1,0 +1,66 @@
+/*Constructor in C++ is a special method that is invoked automatically at the
+time of object creation. It is used to initialize the data members of new
+objects generally. The constructor in C++ has the same name as the class or
+structure. Constructor is invoked at the time of object creation. It constructs
+the values i.e. provides data for the object which is why it is known as
+constructors.
+
+Constructor does not have a return value, hence they do not have a return type.
+
+Destructor is an instance member function which is invoked automatically
+whenever an object is going to be destroyed. Meaning, a destructor is the last
+function that is going to be called before an object is destroyed.
+
+Destructor is also a special member function like constructor. Destructor
+destroys the class objects created by constructor.
+//Destructor has the same name as their class name preceded by a tilde (~)
+symbol. It is not possible to define more than one destructor. The destructor is
+only one way to destroy the object create by constructor. Hence destructor
+can-not be overloaded. Destructor neither requires any argument nor returns any
+value. It is automatically called when object goes out of scope. Destructor
+release memory space occupied by the objects created by constructor. In
+destructor, objects are destroyed in the reverse of an object creation.*/
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+private: // By default class are private in nature
+  int length;
+  int breadth;
+
+public:
+  Rectangle() // Default constructor
+  {
+    length = 0;
+    breadth = 0;
+  }
+  Rectangle(int l, int b) // Parameterized Constructor
+  {
+    length = l;
+    breadth = b;
+  }
+  int area() { return length * breadth; }
+  int perimeter() { return 2 * (length + breadth); }
+  void setlength(int l) // Mutators - used for writing the objects
+  {
+    length = l;
+  }
+  void setbreadth(int b) { breadth = b; }
+  void getlength() //// Actuators - used for reading the objects
+  {
+    return length;
+  }
+  void getbreadth() { return breadth; }
+
+  ~Rectangle() // Destructor
+  {
+    cout << "DESTRUCTOR";
+  }
+};
+int main() {
+  Rectangle r = {10, 15}; // or r(10,15)
+  cout << "AREA " << r.area() << endl;
+  cout << "PERIMETER " << r.perimeter() << endl;
+  return 0;
+}
