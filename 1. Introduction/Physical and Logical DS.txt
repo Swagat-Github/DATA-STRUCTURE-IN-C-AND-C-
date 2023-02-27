@@ -1,0 +1,40 @@
+/*
+PHYSICAL DS
+ARRAY
+  *Stored inside stack
+  *Used when list of elements(size) is known
+LINKED LIST
+  *Stored inside Heap
+  *Used when list of elements(size) is unkown
+THESE TWO ARE PHYSICAL BZC THEY DEFINE HOW MEMORY SHOULD BE ORGANIZED FOR
+STORING ELEMENTS or DATA
+
+LOGICAL DATA STRUCTURE(UTILIZATION,INSERTION,DELETION OF ARRAY ARE PERFORMED
+USING THE BELOW DS): *STACK *QUEUE *TREE *GRAPH *HASH TABLE
+
+STACK & QUEUE -> LINEAR DS
+TREE & GRAPH  -> NON-LINEAR DS
+HASH TABLE    -> LINEAR OR TABULAR DS
+
+STACK
+ *Works on principle LAST IN FIRST OUT(LIFO)
+QUEUE
+ *Works on principle FIRST IN FIRST OUT(FIFO)
+
+TREE
+ *Organized like hierachy
+GRAPH
+ *collection of nodes and links
+These DS are in application & algorithm
+
+TO IMPLEMENT THESE LOGICAL DATA STRUCTURE ARE IMPLEMENTED USING PHYSICAL DATA
+STRUCTURE(ARRAY AND LLIST)
+
+
+
+
+
+
+
+
+*/
